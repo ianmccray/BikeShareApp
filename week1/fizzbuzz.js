@@ -1,11 +1,23 @@
 // use this template for your fizzbuzz code
 
 function fizzbuzz(numbers) {
-  // assume numbers is an array of integers.  fizzbuzz should return a new
-  // array where multiples of 3s and 5s become "Fizz" "Buzz" or "FizzBuzz"
-  // using numbers.map()
-  // YOUR CODE HERE
+  
+  const result = numbers.map(value =>{ 
+    str = "";
+    if(value%3 === 0)
+        str = "fizz";
+    if(value%5 === 0)
+        str = str + "buzz";
+    if(str === "")
+        return value;
+    else 
+        return str;
+   });
+    
+    return result;
+    
 }
+
 
 // here's a test case to see if you got it right
 // DON'T CHANGE THIS
@@ -15,7 +27,7 @@ function test() {
     arr.push(i);
   }
   let updatedArray = fizzbuzz(arr);
-  updatedArray.array.forEach(element => {
+  updatedArray.forEach(element => {
     console.log(element);
   });
 }
