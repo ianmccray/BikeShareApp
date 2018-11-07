@@ -1,0 +1,15 @@
+.FormLogin{
+  align-items: center;
+  padding-top: 10%;
+}
+
+.Error{
+  margin: 0;
+  padding: 0;
+  color: #D8000C;
+}
+
+p {
+   margin: 0px;
+   padding: 0px;
+}
